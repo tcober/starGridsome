@@ -17,6 +17,11 @@ body {
   color: #fff;
 }
 
+p {
+  line-height: 22px;
+  font-size: 14px;
+}
+
 .layout {
   max-width: 95%;
   margin: 30px auto 0px;
