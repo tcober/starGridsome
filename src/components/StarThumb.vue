@@ -1,6 +1,6 @@
 <template>
   <div class="star-contain">
-    <g-image class="star-image" :src="movie.Attachments[0].url" />
+    <div class="star-image" :style="{ backgroundImage: 'url(' + movie.Attachments[0].url + ')' }"></div>
     <div class="text-contain">
       <h1>{{movie.Name}}</h1>
       <p>{{movie.Notes}}</p>
@@ -24,10 +24,10 @@ export default {
 
 <style lang="scss" scoped>
 .star-contain {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
   flex-grow: 1;
-  flex-basis: 28%;
-  padding: 0px 30px;
+  flex-basis: 25%;
+  padding: 0px 40px;
 
   .text-contain {
     flex-basis: 33%;
@@ -38,9 +38,12 @@ export default {
   }
 
   .star-image {
+    width: 100%;
     height: 250px;
     display: block;
     margin: 0 auto;
+    background-size: cover;
+    background-position: center;
   }
 }
 </style>
