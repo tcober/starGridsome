@@ -30,6 +30,10 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  @include respond-to("small") {
+    max-width: 100%;
+    padding: 0px;
+  }
 }
 
 .header {

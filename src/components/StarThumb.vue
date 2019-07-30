@@ -33,6 +33,11 @@ export default {
     flex-basis: 40%;
   }
 
+  @include respond-to("small") {
+    flex-basis: 100%;
+    padding: 0px 20px;
+  }
+
   h1 {
     font-size: 23px;
   }
