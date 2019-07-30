@@ -18,8 +18,8 @@ body {
 }
 
 p {
-  line-height: 22px;
-  font-size: 14px;
+  line-height: 24px;
+  font-size: 16px;
 }
 
 .layout {

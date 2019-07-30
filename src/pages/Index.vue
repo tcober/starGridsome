@@ -58,7 +58,7 @@ query Groups{
   font-size: 50px;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0px 40px;
+  margin: 30px 0px 50px;
   .tech {
     height: 70px;
     margin: 0px 30px;
