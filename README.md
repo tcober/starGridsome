@@ -15,6 +15,6 @@ AIRTABLE_BASE=YOUR_APP_BASE</pre>
 
 You will also need to copy these same environment variables to your netlify site under settings >> Build & Deploy >> Environment
 
-take a looke in ```gridsome.server.js``` to modify your data and calls
+take a look in ```gridsome.server.js``` at the root of the project to modify data and calls for data.
 
 run ```gridsome develop``` and enjoy!
