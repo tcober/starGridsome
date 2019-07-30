@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <header class="header">
-      <g-image alt="Star Wars logo" src="@/assets/star_wars.png" width="535" />
+      <g-image class="logo" alt="Star Wars logo" src="@/assets/star_wars.png" />
     </header>
     <slot />
   </div>
@@ -53,5 +53,10 @@ a {
   &:hover {
     color: rgb(213, 216, 44);
   }
+}
+
+.logo {
+  max-width: 535px;
+  width: 80%;
 }
 </style>

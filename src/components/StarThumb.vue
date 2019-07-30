@@ -29,8 +29,8 @@ export default {
   flex-basis: 25%;
   padding: 0px 40px;
 
-  .text-contain {
-    flex-basis: 33%;
+  @include respond-to("large") {
+    flex-basis: 40%;
   }
 
   h1 {
