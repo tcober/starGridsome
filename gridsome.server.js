@@ -5,12 +5,25 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({ addContentType }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api
-  })
+const axios = require("axios");
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api
-  })
-}
+module.exports = function(api) {
+  api.loadSource(async store => {
+    const { data } = await axios.get(
+      `https://api.airtable.com/v0/${
+        process.env.AIRTABLE_BASE
+      }/Movies?api_key=${process.env.AIRTABLE_API_KEY}`
+    );
+
+    const contentType = store.addContentType({
+      typeName: "Airtable"
+    });
+
+    for (const item of data.records) {
+      contentType.addNode({
+        id: item.id,
+        ...item.fields
+      });
+    }
+  });
+};

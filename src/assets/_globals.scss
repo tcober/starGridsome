@@ -1,0 +1,25 @@
+//Colors
+$gray: #070707;
+$blue: #2175c9;
+
+// Responsive Mixins
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == "xsmall" {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+  @if $breakpoint == "small" {
+    @media (max-width: 480px) {
+      @content;
+    }
+  } @else if $breakpoint == "medium" {
+    @media (max-width: 700px) {
+      @content;
+    }
+  } @else if $breakpoint == "large" {
+    @media (max-width: 960px) {
+      @content;
+    }
+  }
+}
