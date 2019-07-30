@@ -3,7 +3,7 @@
 
 [Demo Site](https://starwarsgridsome.netlify.com/)
 
-run ```npm install```
+pull the repo down and run ```npm install```
 
 Next, to get this running you need to create an airtable base with a table entitled "Movies" with the data from [this google sheet](https://docs.google.com/spreadsheets/d/1cwLHUPc6RL_raj7m71vt0IrhJ3vQgvUKRZSaFVG49LY/edit?usp=sharing). Then you will need to create a .env file at the root of the project that looks like:
 
